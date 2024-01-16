@@ -1,0 +1,14 @@
+﻿{
+  "profiles": {
+    "Ocelot18.Api": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": false,
+        "launchUrl": "swagger",
+        "applicationUrl": "https://localhost:6001;https://localhost:6002",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+    }
+  }
+}

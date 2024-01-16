@@ -1,0 +1,29 @@
+{
+    "Routes": [
+        {
+            "UpstreamHost": "localhost:6001",
+            "UpstreamPathTemplate": "/test/{everything}",
+            "DownstreamPathTemplate": "/{everything}",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7071
+                }
+            ]
+        },
+        {
+            "UpstreamHost": "localhost:6002",
+            "UpstreamPathTemplate": "/test/{everything}",
+            "DownstreamPathTemplate": "/{everything}",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7072
+                }
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:6001"
+    }
+}
